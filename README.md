@@ -1,15 +1,21 @@
 CORS W.T.F.?! or 'What is the best way to play with cors locally?'
 ========
-
-Simple example ajax call that requires CORS.
-Y U NO WORK?!
-
+1.
 ```bash
 npm install -g http-server
 http-server --cors
 ```
 
-Should work, right?
+2.
+Simple example ajax call that requires CORS.
+```javascript
+$.ajax({
+  type: 'GET',
+  url: 'https://api.github.com/',
+  crossDomain: true
+}).done(function (data) {
+  console.log(data);
+});
+```
 
-Instead we get this:
-![screenshot of the issue](./screen.png)
+## Just works™
