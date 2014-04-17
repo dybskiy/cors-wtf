@@ -18,7 +18,7 @@ $.ajax({
 });
 ```
 
-PS: don't try this with ```url: 'http://www.nytimes.com'```
+PS: don't try this with ```url: 'http://www.nytimes.com'``` as you'll spend a lot of time trying to figure out why it's not working, which is the reason for this repo to exist.
 
 
 ## Just works™
