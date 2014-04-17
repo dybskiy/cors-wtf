@@ -10,3 +10,6 @@ http-server --cors
 ```
 
 Should work, right?
+
+Instead we get this:
+![screenshot of the issue](./screen.png)
