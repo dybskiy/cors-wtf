@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CORS WTF</title>
+</head>
+<body>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script>
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://www.nytimes.com',
+      crossDomain: true
+    }).done(function (data) {
+      console.log(data);
+    });
+
+  </script>
+</body>
